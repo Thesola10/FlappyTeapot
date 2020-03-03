@@ -1,4 +1,5 @@
-var imported = { imports: { imported_func: arg => console.log(arg) } };
+const game = import("../pkg/flappyteapot.js");
 
-WebAssembly.instantiateStreaming(fetch('game.wasm'), imported)
-           .then(obj => obj.instance.exports.start());
+game.then(game => {
+    game.start();
+});
