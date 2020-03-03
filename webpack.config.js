@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-    entry: './html/game.js',
+    entry: './game.js',
     output: {
-        path: path.resolve(__dirname, 'pkg'),
-        filename: 'bundle.js'
+        path: path.resolve(__dirname),
+        filename: 'pkg/bundle.js'
     }
 }
