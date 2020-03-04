@@ -1,6 +1,7 @@
 {
-  "name": "FlappyTeapot",
+  "name": "@thesola10/flappy-teapot",
   "version": "0.1.0",
+  "repository": "https://github.com/Thesola10/FlappyTeapot",
   "dependencies": {
     "webpack": "^4.42.0"
   },
