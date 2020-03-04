@@ -1,9 +1,9 @@
 [package]
-name = "flappyteapot"
+name = "flappy-teapot"
 version = "0.1.0"
 authors = ["Karim Vergnes <thesola10@bobile.fr>"]
 description = "A WASM game for HTTP error 418"
-license = "GPL/3"
+license = "GPL-3.0"
 repository = "https://github.com/Thesola10/FlappyTeapot"
 edition = "2018"
 
