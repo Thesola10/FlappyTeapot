@@ -7,9 +7,14 @@ use piet_web::WebRenderContext;
 
 mod game;
 
-#[wasm_bindgen(start)]
+#[wasm_bindgen(js_name=addPngFile)]
+pub fn add_png_file(data: Vec<u8>, name: &str) {
+    console::log_1(&(format!("Loading asset: {}", name).into()));
+}
+
+#[wasm_bindgen(js_name=start)]
 pub fn start() {
-    console::log_1(&"Loading Flappy Teapot WASM module".into());
+    console::log_1(&"Loading main game".into());
 
     let window = window().unwrap();
     let canvas =  window.document()                     .unwrap()
@@ -25,7 +30,7 @@ pub fn start() {
 
     let mut piet_context = WebRenderContext::new(&mut context, &window);
 
-    game::mainloop(&piet_context);
+    game::mainloop(&mut piet_context);
 
     piet_context.finish().unwrap();
 }

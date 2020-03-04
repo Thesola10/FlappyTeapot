@@ -1,8 +1,11 @@
 {
+  "name": "FlappyTeapot",
+  "version": "0.1.0",
   "dependencies": {
     "webpack": "^4.42.0"
   },
   "devDependencies": {
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com" }
 }

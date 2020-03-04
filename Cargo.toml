@@ -2,6 +2,9 @@
 name = "flappyteapot"
 version = "0.1.0"
 authors = ["Karim Vergnes <thesola10@bobile.fr>"]
+description = "A WASM game for HTTP error 418"
+license = "GPL/3"
+repository = "https://github.com/Thesola10/FlappyTeapot"
 edition = "2018"
 
 [lib]
@@ -10,6 +13,7 @@ crate-type = ["cdylib"]
 [dependencies]
 js-sys = "0.3.35"
 wasm-bindgen = "0.2.58"
+png = "0.16.1"
 piet = "0.0.6"
 piet-web = "0.0.6"
 
